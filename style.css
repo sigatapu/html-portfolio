@@ -1,76 +1,85 @@
-*{
+* {
+    font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
-    font-family: cursive;
+    box-sizing: border-box;
+}
+
+body {
     background: black;
 }
-.hero{
-    position: relative;
-    
+
+.hero {
     background: black;
-}
-nav{
-    display: flex;
-    width: 84%;
-    margin: 5%;
-    margin-top: 0;
     padding: 20px 0;
-   position: relative;
-   left: 50%;
-    justify-content: space-between;
-    font-size: 13px;
 }
-nav ul li{
-    display: inline-block;
+
+nav {
+    display: flex;
+    justify-content: space-around;
     list-style: none;
-    margin: 10px 20px;
-   
 }
-nav ul li a{
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
     text-decoration: none;
     color: white;
     font-weight: bold;
 }
-nav ul li a:hover{
-    color:red;
+
+nav ul li a:hover {
+    color: red;
 }
-.detail{
-    margin: 8%;
-    color: #212121;
+
+.menu-icon {
+    display: none; /* Hide menu icon by default */
 }
-.detail h1{
-    font-size: 50px;
-    color: #212121;
-    margin-bottom: 20px;
+
+.menu {
+    display: none;
+    flex-direction: column;
+    list-style: none;
 }
-span{
-     color: red;
+
+.menu.active {
+    display: flex;
 }
-.detail p{
-    color: #5555;
-    line-height: 22px;
+
+.menu li {
+    margin: 10px 0;
 }
-.detail a{
-    background: #212121;
-    padding: 10px 18px;
+
+.menu a {
     text-decoration: none;
-    font-weight: bold;
-    color: #fff;
-    display: inline-block;
-    margin: 30px 0;
-    border-radius: 5px;
-}
-
-h1[kittu]{
-    color:white;
-}
-hr{
-    color: orange;
-}
-p[small]{
     color: white;
+    font-weight: bold;
 }
 
-div[image]{
-   float: right;
+.menu a:hover {
+    color: red;
 }
+
+/*@media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }*/
